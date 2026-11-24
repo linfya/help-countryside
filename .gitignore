@@ -28,3 +28,6 @@ src/main/resources/application-local.yaml
 # ---------- 操作系统 ----------
 .DS_Store
 Thumbs.db
+
+# ---------- 本地工具数据 ----------
+.workbuddy-ai/
