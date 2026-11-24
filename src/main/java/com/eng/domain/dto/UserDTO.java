@@ -1,0 +1,12 @@
+package com.eng.domain.dto;
+
+import lombok.Data;
+
+@Data
+public class UserDTO {
+
+    private Long userId;
+    private String userName;
+    private String icon;
+
+}

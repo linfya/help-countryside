@@ -1,0 +1,35 @@
+# 本地开发配置模板
+#
+# 使用方式：
+#   cp src/main/resources/application-dev.yaml.example src/main/resources/application-dev.yaml
+# 然后按自己环境填写下面的值。application-dev.yaml 已被 .gitignore 忽略，不会提交到仓库。
+#
+# 也可以不建这个文件，直接用环境变量覆盖 application.yaml 中的同名占位符。
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+
+tencent:
+  cos:
+    secret-id: 你的 SecretId
+    secret-key: 你的 SecretKey
+    bucket-name: 你的存储桶名称
+    region: ap-shanghai
+    url: https://你的存储桶名称.cos.ap-shanghai.myqcloud.com
+
+aliyun:
+  sms:
+    sign-name: 短信签名
+    template-code: 短信模板 Code
+    access-key-id: 你的 AccessKeyId
+    access-key-secret: 你的 AccessKeySecret
+
+plant:
+  api:
+    app-code: 你的植物识别接口 AppCode
