@@ -35,7 +35,7 @@
 ## 系统设计要点
 
 **1. 无状态登录态**
-验证码写入 `login:code:{phone}`，有效期 5 分钟。登录成功后生成 8 位随机 Token，
+验证码写入 `login:code:{phone}`，有效期 2 分钟。登录成功后生成 8 位随机 Token，
 用户信息以 Hash 结构存入 `login:token:{token}` 并设置过期时间，前端通过 `Authorization` 头携带。
 服务端不保存 Session，可直接水平扩容。
 
